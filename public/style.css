@@ -210,9 +210,9 @@ p {
   box-shadow: var(--shadow);
   position: relative;
 }
-/* .testimonials > div > div {
+.testimonials > div > div {
   border: var(--border);
-} */
+}
 .testimonials > div > .content {
   height: 40%;
   color: var(--white);
@@ -420,7 +420,19 @@ footer > div ion-icon {
 @media all and (min-width: 900px) {
   .testimonials {
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 20rem;
+    /* grid-auto-rows: 20rem; */
+  }
+  .testimonials > div{
+    justify-content: space-evenly;
+  }
+  .testimonials .one {
+    grid-row: 1/4;
+  }
+  .testimonials .two {
+    grid-row: 1/4;
+  }
+  .testimonials .three {
+    grid-row: 1/4;
   }
   .middle p {
     width: 50%;
@@ -442,7 +454,6 @@ footer > div ion-icon {
   .testimonials {
     height: 50vh;
   }
-
 }
 @media screen and (min-width: 1000px) {
   footer > .content {
@@ -497,7 +508,18 @@ footer > div ion-icon {
     /* border: var(--border); */
     height: 100%;
   }
-    .get-early input:first-child {
-    width: 48rem;
+  .get-early input:first-child {
+    width: 45rem;
+  }
+  .get-early .middle {
+    height: 50vh;
+    width: 70%;
+  }
+  .testimonials{
+    width: 90%;
+    border: var(--border);
+    margin-left: auto;
+    margin-right: auto;
+    gap: 4rem;
   }
 }
